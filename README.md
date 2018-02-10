@@ -1,7 +1,7 @@
 # aws-violations-project
 
 Another awesome application developed by: Matt Trotter
-This app has an AWS customizable Ember front-end and simple python API backend.
+<br />This app has an AWS customizable Ember front-end and simple python API backend.
 Easily communicate with AWS services from a simple UI for reporting unmanaged resources.
 Add a restricted IAM key to your `aws configure` cli tool and let it work its magic
 autodiscovering untagged and unassigned resources.
