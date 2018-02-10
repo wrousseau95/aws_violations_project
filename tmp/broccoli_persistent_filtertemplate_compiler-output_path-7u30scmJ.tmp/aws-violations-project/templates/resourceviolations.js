@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"fF3LpGpD","block":"{\"symbols\":[],\"statements\":[[1,[18,\"outlet\"],false]],\"hasEval\":false}","meta":{"moduleName":"aws-violations-project/templates/resourceviolations.hbs"}});

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.190.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+</script>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AWSViolationsProject</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/aws-violations-project.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+<h1 align="center">AWS Violations</h1>
+<div id="sse1">
+  <div id="sses1">
+    <ul>
+      <li><a href="untaggedresources">Tagging Violations</a></li>
+      <li><a href="resourceviolations">Unidentified Resources</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/aws-violations-project.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>
