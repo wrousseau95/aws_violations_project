@@ -1,7 +1,10 @@
 # aws-violations-project
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Another awesome application developed by: Matt Trotter
+This app has an AWS customizable Ember front-end and simple python API backend.
+Easily communicate with AWS services from a simple UI for reporting unmanaged resources.
+Add a restricted IAM key to your `aws configure` cli tool and let it work its magic
+autodiscovering untagged and unassigned resources.
 
 ## Prerequisites
 
@@ -17,11 +20,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/sudir/aws_violations_project.git`
 * `cd aws-violations-project`
 * `npm install` 
 * `sudo ./install_dep.sh`
 
+### Be sure to setup your target aws Region/AZ, Only use IAM key with describe permissions
+* `aws configure` 
+ 
 ## Running Ember Server / Development
 
 * `ember server`
