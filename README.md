@@ -6,6 +6,9 @@ Easily communicate with AWS services from a simple UI for reporting unmanaged re
 Add a restricted IAM key to your `aws configure` cli tool and let it work its magic
 autodiscovering untagged and unassigned resources.
 
+#### Example:
+http://52.23.253.231:4200/untaggedresources
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
