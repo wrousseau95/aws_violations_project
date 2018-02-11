@@ -2707,3 +2707,22 @@ Slowest Nodes (totalTime => 5% )              | Total (avg)
 broccoli-persistent-filter:EslintValid... (2) | 189ms (94 ms)       
 broccoli-persistent-filter:Babel > [Ba... (3) | 82ms (27 ms)        
 
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (79ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 18ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 9ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
