@@ -1,0 +1,1 @@
+/Users/sulay/Documents/Repositories/aws_violations_project/tmp/funnel-input_base_path-cSpYQbe9.tmp/initializer-factory.js

@@ -30,8 +30,8 @@ function isEmpty(obj) {
 
 if(isEmpty(arrayvol)) { 
 $('#loadingDivvol').remove();
-document.getElementById("uvt").innerHTML = "<h3>Awesome! None Untagged</h3>";  
-document.getElementById("uvol").innerHTML = "<h3>Awesome! None Untagged</h3>";
+document.getElementById("uvt").innerHTML ='<i class="fa fa-check"></i>'+' '+"All volumes successfully tagged";  
+document.getElementById("uvol").innerHTML = "This means that you have no violations<br />"+" "+"To load again, refresh this page.";
 
 } else {
     // Object is NOT empty
@@ -74,8 +74,8 @@ function isEmpty(obj) {
 }
 if(isEmpty(arrayec2)) { 
 $('#loadingDivec2').remove();
-document.getElementById("uet").innerHTML = "<h3>Awesome! None Untagged</h3>";  
-document.getElementById("uec2").innerHTML = "<h3>Awesome! None Untagged</h3>";
+document.getElementById("uet").innerHTML ='<i class="fa fa-check"></i>'+' '+"All instances successfully tagged";  
+document.getElementById("uec2").innerHTML ="This means that you have no violations<br />"+" "+"To load again, refresh this page.";
 
 } else {
     // Object is NOT empty
@@ -118,8 +118,8 @@ function isEmpty(obj) {
 }
 if(isEmpty(arrayunvol)) { 
 $('#loadingDivuaa').remove();
-document.getElementById("uut").innerHTML = "<h3>Awesome! None unattached</h3>";  
-document.getElementById("uaa").innerHTML = "<h3>Awesome! None unattached</h3>";
+document.getElementById("uut").innerHTML ='<i class="fa fa-check"></i>'+' '+"All volumes successfully attached"; 
+document.getElementById("uaa").innerHTML ="This means that you have no violations<br />"+" "+"To load again, refresh this page.";
 
 } else {
     // Object is NOT empty
