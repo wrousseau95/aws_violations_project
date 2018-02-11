@@ -6,8 +6,12 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
+
 Router.map(function() {
   this.route('untaggedresources');
 });
+
+
+
 
 export default Router;

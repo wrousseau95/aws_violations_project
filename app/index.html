@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <script src="https://sdk.amazonaws.com/js/aws-sdk-2.190.0.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 
 
 <script type="text/javascript">
@@ -47,16 +50,15 @@ body {
   </head>
   <body>
     {{content-for "body"}}
-<h1 align="center">AWS Violations</h1>
+<h1 align="center" style="font-family: 'Kaushan Script'; font-color:black">AWS Auditing App</h1>
 <div id="sse1">
   <div id="sses1">
     <ul>
-      <li><a href="untaggedresources">Tagging Violations</a></li>
-   
+      <li><a href="untaggedresources" style="font-size:20px;">Search Violations</a></li>
+       <li><a href="https://github.com/sudir/aws_violations_project" style="font-size:20px;">Visit My Github</a></li>   
     </ul>
   </div>
 </div>
-
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/aws-violations-project.js"></script>

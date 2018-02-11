@@ -1,7 +1,11 @@
 import Route from '@ember/routing/route';
 
-export default Route.extend({
+
+ export default Route.extend({
 });
+
+
+
 
 
 // Async function for finding untagged Volumes
@@ -23,14 +27,17 @@ function isEmpty(obj) {
     }
     return true;
 }
+
 if(isEmpty(arrayvol)) { 
+$('#loadingDivvol').remove();
 document.getElementById("uvt").innerHTML = "<h3>Awesome! None Untagged</h3>";  
 document.getElementById("uvol").innerHTML = "<h3>Awesome! None Untagged</h3>";
 
 } else {
     // Object is NOT empty
 	var ul = document.createElement('ul');
-document.getElementById("uvt").innerHTML = "<h4>Warning: Untagged volumes found</h4>";
+$('#loadingDivvol').remove();
+document.getElementById("uvt").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged volumes";
 	document.getElementById('uvol').appendChild(ul);
 		arrayvol.forEach(function(name){
 			var li = document.createElement('li');
@@ -66,13 +73,15 @@ function isEmpty(obj) {
     return true;
 }
 if(isEmpty(arrayec2)) { 
+$('#loadingDivec2').remove();
 document.getElementById("uet").innerHTML = "<h3>Awesome! None Untagged</h3>";  
 document.getElementById("uec2").innerHTML = "<h3>Awesome! None Untagged</h3>";
 
 } else {
     // Object is NOT empty
   var ul = document.createElement('ul');
-document.getElementById("uet").innerHTML = "<h4>Warning: Untagged instances found</h4>";
+$('#loadingDivec2').remove();
+document.getElementById("uet").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged instances";
   document.getElementById('uec2').appendChild(ul);
     arrayec2.forEach(function(name){
       var li = document.createElement('li');
@@ -108,13 +117,15 @@ function isEmpty(obj) {
     return true;
 }
 if(isEmpty(arrayunvol)) { 
+$('#loadingDivuaa').remove();
 document.getElementById("uut").innerHTML = "<h3>Awesome! None unattached</h3>";  
 document.getElementById("uaa").innerHTML = "<h3>Awesome! None unattached</h3>";
 
 } else {
     // Object is NOT empty
   var ul = document.createElement('ul');
-document.getElementById("uut").innerHTML = "<h4>Warning: Unattached volumes found</h4>";
+$('#loadingDivuaa').remove();
+document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Unattached volumes";
   document.getElementById('uaa').appendChild(ul);
     arrayunvol.forEach(function(name){
       var li = document.createElement('li');
@@ -133,10 +144,10 @@ document.getElementById("uut").innerHTML = "<h4>Warning: Unattached volumes foun
 
 
 // calling Async functions
-get_untag_vol("http://localhost:5000/get_untagged_volumes", function() {
+get_untag_vol("http://52.23.253.231/get_untagged_volumes", function() {
 });
-get_untag_ec2("http://localhost:5000/get_untagged_instances", function() { 
+get_untag_ec2("http://52.23.253.231/get_untagged_instances", function() { 
 });
-get_unat_vol("http://localhost:5000/get_detached_volumes", function() { 
+get_unat_vol("http://52.23.253.231/get_detached_volumes", function() { 
 });
 

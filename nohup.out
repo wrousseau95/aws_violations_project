@@ -1,0 +1,2228 @@
+DEPRECATION: An addon is trying to access project.nodeModulesPath. This is not a reliable way to discover npm modules. Instead, consider doing: require("resolve").sync(something, { basedir: project.root }). Accessed from:   new NPMDependencyVersionChecker (/root/aws_violations_project/node_modules/ember-cli-loading-slider/node_modules/ember-cli-version-checker/src/npm-dependency-version-checker.js:11:33)
+Could not start watchman
+Visit https://ember-cli.com/user-guide/#watchman for more info.
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   40:5  error  Unnecessary semicolon  no-extra-semi
+   82:5  error  Unnecessary semicolon  no-extra-semi
+  124:5  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (3914ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Concat (8)                                    | 2074ms (259 ms)     
+Babel (19)                                    | 842ms (44 ms)       
+Rollup (1)                                    | 535ms               
+EslintValidationFilter (2)                    | 254ms (127 ms)      
+
+cleaning up...
+DEPRECATION: An addon is trying to access project.nodeModulesPath. This is not a reliable way to discover npm modules. Instead, consider doing: require("resolve").sync(something, { basedir: project.root }). Accessed from:   new NPMDependencyVersionChecker (/root/aws_violations_project/node_modules/ember-cli-loading-slider/node_modules/ember-cli-version-checker/src/npm-dependency-version-checker.js:11:33)
+Could not start watchman
+Visit https://ember-cli.com/user-guide/#watchman for more info.
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   40:5  error  Unnecessary semicolon  no-extra-semi
+   82:5  error  Unnecessary semicolon  no-extra-semi
+  124:5  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (3641ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Concat (8)                                    | 2062ms (257 ms)     
+Babel (19)                                    | 574ms (30 ms)       
+Rollup (1)                                    | 545ms               
+EslintValidationFilter (2)                    | 245ms (122 ms)      
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token (3:29)
+
+  1 | import Route from '@ember/routing/route';
+  2 |  actions: {
+> 3 |     doSomethingBad: function () {
+    |                              ^
+  4 |       throw new Error("Something bad happened!");
+  5 |     }
+  6 |   },
+
+
+Stack Trace and Error Report: /tmp/error.dump.9cc7150c17b931c3348dfc0a766133c5.log
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   41:5  error  Unnecessary semicolon  no-extra-semi
+   83:5  error  Unnecessary semicolon  no-extra-semi
+  125:5  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (522ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 338ms (112 ms)      
+broccoli-persistent-filter:EslintValid... (2) | 103ms (51 ms)       
+
+file added models/loading.js
+Build Error (Babel)
+
+aws-violations-project/models/loading.js: Unexpected token (1:16)
+
+> 1 | model: function () {
+    |                 ^
+  2 |     return new Ember.RSVP.Promise(function (resolve, reject) {
+  3 |       setTimeout(function () {resolve({});}, 3000);
+  4 |     });
+
+
+Stack Trace and Error Report: /tmp/error.dump.b8c8bd1aa048665626b26abf8e04cac0.log
+file added models/4913
+file deleted models/4913
+file added models/loading.js~
+file deleted models/loading.js
+file added models/loading.js
+file deleted models/loading.js~
+
+/root/aws_violations_project/app/models/loading.js
+  1:1   error  'App' is not defined                                                        no-undef
+  1:18  error  Use import Route from '@ember/routing/route'; instead of using Ember.Route  ember/new-module-imports
+  1:18  error  'Ember' is not defined                                                      no-undef
+  5:16  error  Use import { Promise } from 'rsvp'; instead of using Ember.RSVP.Promise     ember/new-module-imports
+  5:16  error  'Ember' is not defined                                                      no-undef
+  5:54  error  'reject' is defined but never used                                          no-unused-vars
+
+✖ 6 problems (6 errors, 0 warnings)
+
+
+Build successful (248ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (1) | 108ms               
+broccoli-persistent-filter:Babel > [Ba... (3) | 43ms (14 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 24ms (12 ms)        
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (138ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:TemplateCom... (2) | 37ms (18 ms)        
+broccoli-persistent-filter:Babel > [Ba... (3) | 27ms (9 ms)         
+SourceMapConcat: Concat App (1)               | 14ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (219ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 107ms               
+broccoli-persistent-filter:Babel > [Ba... (3) | 32ms (10 ms)        
+SourceMapConcat: Vendor JS (1)                | 18ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token (7:0)
+
+   5 | });
+   6 | 
+>  7 | <script type="text/x-handlebars" data-template-name="index">
+     | ^
+   8 |   <p>done
+   9 |   </p>
+  10 | </script>
+
+
+Stack Trace and Error Report: /tmp/error.dump.88449b380a3ac182e76e524b7e7378b7.log
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   43:5  error  Unnecessary semicolon  no-extra-semi
+   85:5  error  Unnecessary semicolon  no-extra-semi
+  127:5  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (473ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 309ms (103 ms)      
+broccoli-persistent-filter:EslintValid... (2) | 63ms (31 ms)        
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (61ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Funnel (7)                                    | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+SourceMapConcat: Concat App (1)               | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (80ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 16ms                
+broccoli-persistent-filter:Babel > [Ba... (2) | 5ms (2 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 5ms                 
+Funnel (7)                                    | 5ms (0 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 4ms                 
+Funnel (custom transform: amd) (1)            | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (72ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 10ms                
+broccoli-persistent-filter:EslintValid... (2) | 7ms (3 ms)          
+broccoli-persistent-filter:Mapper (1)         | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 5ms (2 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (55ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+Addon#treeFor (ember-qunit - addon-tes... (1) | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+SourceMapConcat: Concat App (1)               | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 2ms                 
+
+file deleted models/loading.js
+
+Build successful (82ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (1) | 12ms                
+SourceMapConcat: Concat: Test Support JS (1)  | 8ms                 
+SourceMapConcat: Concat App (1)               | 8ms                 
+Addon#treeFor (ember-qunit - addon-tes... (1) | 7ms                 
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+
+file added 4913
+file deleted 4913
+file added router.js~
+file deleted router.js
+file added router.js
+file deleted router.js~
+
+/root/aws_violations_project/app/router.js
+   9:1   error  'IndexRoute' is not defined                                                 no-undef
+   9:14  error  Use import Route from '@ember/routing/route'; instead of using Ember.Route  ember/new-module-imports
+   9:14  error  'Ember' is not defined                                                      no-undef
+  13:16  error  Use import { Promise } from 'rsvp'; instead of using Ember.RSVP.Promise     ember/new-module-imports
+  13:16  error  'Ember' is not defined                                                      no-undef
+  13:54  error  'reject' is defined but never used                                          no-unused-vars
+
+✖ 6 problems (6 errors, 0 warnings)
+
+
+Build successful (239ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: App Tests (1)        | 98ms                
+broccoli-persistent-filter:Babel > [Ba... (3) | 33ms (11 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 17ms (8 ms)         
+SourceMapConcat: Concat: Test Support JS (1)  | 14ms                
+
+file added 4913
+file deleted 4913
+file added router.js~
+file deleted router.js
+file added router.js
+file deleted router.js~
+
+Build successful (117ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 24ms (8 ms)         
+broccoli-persistent-filter:EslintValid... (2) | 18ms (9 ms)         
+SourceMapConcat: Vendor JS (1)                | 12ms                
+SourceMapConcat: Concat App (1)               | 9ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (58ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: Test Support JS (1)  | 10ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added templates/application.hbs~
+file changed templates/application.hbs
+file deleted templates/application.hbs~
+
+Build successful (200ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 119ms (39 ms)       
+SourceMapConcat: Concat App (1)               | 14ms                
+broccoli-persistent-filter:TemplateCom... (2) | 11ms (5 ms)         
+
+file deleted templates/application.hbs
+file added templates/application.hbs~
+file added templates/application.hbs
+file deleted templates/application.hbs~
+
+Build successful (93ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 18ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 9ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+ConfigReplace (3)                             | 6ms (2 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/application.hbs~
+file deleted templates/application.hbs
+file added templates/application.hbs
+file deleted templates/application.hbs~
+Template Compiler Error (TemplateCompiler) in aws-violations-project/templates/application.hbs
+
+Parse error on line 13:
+...}    {{outlet}}
+------------------^
+Expecting 'OPEN_INVERSE_CHAIN', 'INVERSE', 'OPEN_ENDBLOCK', got 'EOF'
+
+
+Stack Trace and Error Report: /tmp/error.dump.f87160236ccd106b5d4a1f44508b6a8c.log
+file deleted templates/application.hbs
+file added templates/application.hbs~
+file added templates/application.hbs
+file deleted templates/application.hbs~
+
+Build successful (90ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 17ms (5 ms)         
+SourceMapConcat: Concat App (1)               | 11ms                
+broccoli-persistent-filter:Babel > [Ba... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+Funnel: Addon JS (6)                          | 5ms (0 ms)          
+broccoli-persistent-filter:TemplateCom... (2) | 5ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/application.hbs~
+file deleted templates/application.hbs
+file added templates/application.hbs
+file deleted templates/application.hbs~
+
+Build successful (172ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (2) | 100ms (50 ms)       
+broccoli-persistent-filter:TemplateCom... (2) | 9ms (4 ms)          
+Funnel (7)                                    | 8ms (1 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (107ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 26ms (8 ms)         
+SourceMapConcat: Concat App (1)               | 15ms                
+broccoli-persistent-filter:TemplateCom... (2) | 15ms (7 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+TreeMerger: `addon/` trees (1)                | 5ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+    8:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+    8:2   error  '$' is not defined                 no-undef
+    8:20  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+    8:20  error  '$' is not defined                 no-undef
+   44:5   error  Unnecessary semicolon              no-extra-semi
+   86:5   error  Unnecessary semicolon              no-extra-semi
+  128:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (310ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 107ms               
+broccoli-persistent-filter:Babel > [Ba... (3) | 72ms (24 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 58ms (29 ms)        
+SourceMapConcat: Vendor JS (1)                | 15ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   18:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   18:2   error  '$' is not defined                 no-undef
+   18:20  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   18:20  error  '$' is not defined                 no-undef
+   46:5   error  Unnecessary semicolon              no-extra-semi
+   88:5   error  Unnecessary semicolon              no-extra-semi
+  130:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (195ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 84ms (28 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 39ms (19 ms)        
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (190ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 117ms (39 ms)       
+SourceMapConcat: Concat App (1)               | 17ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file changed templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (74ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 12ms                
+SourceMapConcat: Concat App (1)               | 12ms                
+TreeMerger (appTestTrees) (1)                 | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (149ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 76ms (25 ms)        
+SourceMapConcat: Concat App (1)               | 10ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (213ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 128ms (42 ms)       
+SourceMapConcat: Concat App (1)               | 13ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (105ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 18ms (6 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 9ms (4 ms)          
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 7ms                 
+TreeMerger (app) (1)                          | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (110ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 30ms (10 ms)        
+SourceMapConcat: Concat App (1)               | 18ms                
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+broccoli-persistent-filter:Babel > [Ba... (1) | 8ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (171ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (1) | 105ms               
+SourceMapConcat: Vendor JS (1)                | 13ms                
+Funnel (testem) (1)                           | 9ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file changed routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   18:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   18:2   error  '$' is not defined                 no-undef
+   18:20  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   18:20  error  '$' is not defined                 no-undef
+   46:5   error  Unnecessary semicolon              no-extra-semi
+   88:5   error  Unnecessary semicolon              no-extra-semi
+  130:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (77ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:EslintValid... (2) | 18ms (9 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 4ms (0 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (99ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 20ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel: Addon JS (6)                          | 7ms (1 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 6ms                 
+TreeMerger (vendor) (1)                       | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (96ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 25ms (8 ms)         
+SourceMapConcat: Concat App (1)               | 15ms                
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (169ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (1) | 104ms               
+Addon#compileAddon(ember-welcome-page) (1)    | 10ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+    8:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+    8:2   error  '$' is not defined                 no-undef
+    8:20  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+    8:20  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (254ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 137ms (45 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 52ms (26 ms)        
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (99ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 32ms (10 ms)        
+SourceMapConcat: Concat App (1)               | 10ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+TreeMerger (app) (1)                          | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (53ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+TreeMerger (vendor) (1)                       | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+SourceMapConcat: Concat App (1)               | 3ms                 
+
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:2   error  '$' is not defined                 no-undef
+   19:20  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:20  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (188ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 72ms (24 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 46ms (23 ms)        
+SourceMapConcat: Concat App (1)               | 10ms                
+broccoli-persistent-filter:Babel > [Ba... (1) | 9ms                 
+
+file added routes/4913
+file deleted routes/4913
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:2   error  '$' is not defined                 no-undef
+   19:28  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:28  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (205ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 82ms (27 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 54ms (27 ms)        
+
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:2   error  '$' is not defined                 no-undef
+   19:41  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:41  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (464ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 199ms (66 ms)       
+SourceMapConcat: Concat: App Tests (1)        | 111ms               
+broccoli-persistent-filter:EslintValid... (2) | 64ms (32 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:2   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:2   error  '$' is not defined                 no-undef
+   19:18  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:18  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (201ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 83ms (27 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 44ms (22 ms)        
+broccoli-persistent-filter:Babel > [Ba... (1) | 11ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   48:5  error  Unnecessary semicolon  no-extra-semi
+   90:5  error  Unnecessary semicolon  no-extra-semi
+  132:5  error  Unnecessary semicolon  no-extra-semi
+
+✖ 3 problems (3 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (347ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 193ms (64 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 50ms (25 ms)        
+SourceMapConcat: Concat App (1)               | 18ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:1   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:1   error  '$' is not defined                 no-undef
+   19:16  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:16  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (326ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (1) | 106ms               
+broccoli-persistent-filter:Babel > [Ba... (3) | 66ms (22 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 45ms (22 ms)        
+SourceMapConcat: Concat: Test Support JS (1)  | 20ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   19:1   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:1   error  '$' is not defined                 no-undef
+   19:18  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   19:18  error  '$' is not defined                 no-undef
+   47:5   error  Unnecessary semicolon              no-extra-semi
+   89:5   error  Unnecessary semicolon              no-extra-semi
+  131:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (450ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 202ms (67 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 164ms (82 ms)       
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   20:4   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:4   error  '$' is not defined                 no-undef
+   20:21  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:21  error  '$' is not defined                 no-undef
+   48:5   error  Unnecessary semicolon              no-extra-semi
+   90:5   error  Unnecessary semicolon              no-extra-semi
+  132:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (212ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 82ms (27 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 52ms (26 ms)        
+broccoli-persistent-filter:Babel > [Ba... (1) | 13ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   20:4   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:4   error  '$' is not defined                 no-undef
+   20:21  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:21  error  '$' is not defined                 no-undef
+   48:5   error  Unnecessary semicolon              no-extra-semi
+   90:5   error  Unnecessary semicolon              no-extra-semi
+  132:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (74ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 16ms                
+broccoli-persistent-filter:EslintValid... (2) | 5ms (2 ms)          
+broccoli-persistent-filter:Babel > [Ba... (3) | 5ms (1 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (75ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 15ms                
+SourceMapConcat: Concat: Test Support JS (1)  | 7ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 7ms                 
+SourceMapConcat: Concat: App Tests (1)        | 6ms                 
+Rollup (1)                                    | 4ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   20:4   error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:4   error  '$' is not defined                 no-undef
+   20:22  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:22  error  '$' is not defined                 no-undef
+   48:5   error  Unnecessary semicolon              no-extra-semi
+   90:5   error  Unnecessary semicolon              no-extra-semi
+  132:5   error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (323ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 183ms (61 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 48ms (24 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   20:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   20:1  error  '$' is not defined                 no-undef
+   48:5  error  Unnecessary semicolon              no-extra-semi
+   90:5  error  Unnecessary semicolon              no-extra-semi
+  132:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 5 problems (5 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (223ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 87ms (29 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 74ms (37 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   39:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   39:1  error  '$' is not defined                 no-undef
+   47:5  error  Unnecessary semicolon              no-extra-semi
+   89:5  error  Unnecessary semicolon              no-extra-semi
+  131:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (326ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 175ms (58 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 59ms (29 ms)        
+SourceMapConcat: Concat App (1)               | 18ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   39:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   39:1  error  '$' is not defined                 no-undef
+   47:5  error  Unnecessary semicolon              no-extra-semi
+   89:5  error  Unnecessary semicolon              no-extra-semi
+  131:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 7 problems (7 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (95ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:EslintValid... (2) | 18ms (9 ms)         
+BroccoliMergeTrees (7)                        | 12ms (1 ms)         
+Funnel (7)                                    | 11ms (1 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 5ms                 
+broccoli-persistent-filter:Babel > [Ba... (3) | 5ms (1 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (138ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 70ms (23 ms)        
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (231ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 136ms (45 ms)       
+SourceMapConcat: Concat App (1)               | 17ms                
+SourceMapConcat: Vendor JS (1)                | 17ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (102ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 28ms (9 ms)         
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+Funnel (7)                                    | 7ms (1 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (97ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 19ms (6 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Concat App (1)               | 8ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 5ms (0 ms)          
+SimpleConcatConcat (2)                        | 4ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (214ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 138ms (46 ms)       
+SourceMapConcat: Concat App (1)               | 17ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (94ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 19ms (6 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 12ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+Funnel: Addon JS (6)                          | 7ms (1 ms)          
+broccoli-persistent-filter:Babel > [Ba... (2) | 5ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (105ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 29ms (9 ms)         
+SourceMapConcat: Concat App (1)               | 12ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 6ms (0 ms)          
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (217ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 133ms (44 ms)       
+SourceMapConcat: Concat App (1)               | 28ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (85ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 19ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:Babel > [Ba... (1) | 4ms                 
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (60ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 3ms (1 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (86ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 23ms (7 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+ProcessedAppTree (1)                          | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (54ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 7ms                 
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 2ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (225ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 144ms (48 ms)       
+SourceMapConcat: Concat App (1)               | 21ms                
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (134ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 64ms (21 ms)        
+SourceMapConcat: Vendor JS (1)                | 12ms                
+SourceMapConcat: Concat App (1)               | 9ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (209ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 130ms (43 ms)       
+SourceMapConcat: Concat App (1)               | 13ms                
+ConfigReplace (3)                             | 11ms (3 ms)         
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (107ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 30ms (10 ms)        
+SourceMapConcat: Concat App (1)               | 9ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 9ms (4 ms)          
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+TreeMerger (preprocessedApp & templates) (1)  | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (101ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 17ms (5 ms)         
+SourceMapConcat: Concat App (1)               | 17ms                
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 11ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (222ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 135ms (45 ms)       
+SourceMapConcat: Concat App (1)               | 24ms                
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (58ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+SourceMapConcat: Concat App (1)               | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (92ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 19ms (6 ms)         
+SourceMapConcat: Vendor JS (1)                | 10ms                
+SourceMapConcat: Concat App (1)               | 8ms                 
+TreeMerger (appAndDependencies) (2)           | 5ms (2 ms)          
+broccoli-persistent-filter:Babel > [Ba... (2) | 5ms (2 ms)          
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 5ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 4ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (87ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 18ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+WatchedDir (8)                                | 6ms (0 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 5ms (2 ms)          
+Funnel: Pod Templates (1)                     | 5ms                 
+Funnel (7)                                    | 5ms (0 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (226ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 143ms (47 ms)       
+SourceMapConcat: Concat App (1)               | 22ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (78ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 18ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (95ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 23ms (7 ms)         
+SourceMapConcat: Concat App (1)               | 15ms                
+Funnel (7)                                    | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (236ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 159ms (53 ms)       
+SourceMapConcat: Concat App (1)               | 20ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (132ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 69ms (23 ms)        
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (92ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 23ms (7 ms)         
+SourceMapConcat: Concat App (1)               | 7ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+broccoli-persistent-filter:Babel > [Ba... (2) | 4ms (2 ms)          
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   33:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   33:1  error  '$' is not defined                 no-undef
+   40:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   40:1  error  '$' is not defined                 no-undef
+   48:5  error  Unnecessary semicolon              no-extra-semi
+   90:5  error  Unnecessary semicolon              no-extra-semi
+  132:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 9 problems (9 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (390ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 256ms (85 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 43ms (21 ms)        
+SourceMapConcat: Concat App (1)               | 28ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   33:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   33:1  error  '$' is not defined                 no-undef
+   40:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   40:1  error  '$' is not defined                 no-undef
+   48:5  error  Unnecessary semicolon              no-extra-semi
+   90:5  error  Unnecessary semicolon              no-extra-semi
+  132:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 9 problems (9 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (63ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:EslintValid... (2) | 12ms (6 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+Template Compiler Error (TemplateCompiler) in aws-violations-project/templates/untaggedresources.hbs:8:2
+
+Invalid end tag `br` (on line 13) (void elements cannot have end tags).
+
+
+Stack Trace and Error Report: /tmp/error.dump.ad4edd064170f3e0aeb79ef363974e29.log
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (123ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 36ms (12 ms)        
+SourceMapConcat: Concat App (1)               | 19ms                
+broccoli-persistent-filter:TemplateCom... (2) | 13ms (6 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel: Filtered App (2)                      | 6ms (3 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+Template Compiler Error (TemplateCompiler) in aws-violations-project/templates/untaggedresources.hbs:8:2
+
+Invalid end tag `br` (on line 13) (void elements cannot have end tags).
+
+
+Stack Trace and Error Report: /tmp/error.dump.9190893b86c4481b00ed9ca5899dc2ff.log
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (111ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 27ms (9 ms)         
+SourceMapConcat: Concat: Test Support JS (1)  | 15ms                
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+Addon#treeFor (ember-cli-qunit - addon... (1) | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (231ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 140ms (46 ms)       
+SourceMapConcat: Concat App (1)               | 23ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (79ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 19ms                
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+SimpleConcatConcat: Concat: Test Suppo... (1) | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (154ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 66ms (22 ms)        
+SourceMapConcat: Concat App (1)               | 17ms                
+SourceMapConcat: Vendor JS (1)                | 16ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file changed templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (232ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 143ms (47 ms)       
+SourceMapConcat: Concat App (1)               | 27ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (89ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 21ms (7 ms)         
+SourceMapConcat: Concat App (1)               | 12ms                
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (116ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 17ms (5 ms)         
+Funnel: Filtered App (2)                      | 10ms (5 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 8ms (4 ms)          
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 8ms (4 ms)          
+broccoli-persistent-filter:Babel > [Ba... (1) | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 6ms (0 ms)          
+BroccoliMergeTrees (7)                        | 6ms (0 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (223ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 138ms (46 ms)       
+SourceMapConcat: Concat App (1)               | 23ms                
+SourceMapConcat: Concat: Test Support JS (1)  | 11ms                
+
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (81ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 20ms (6 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 5ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (88ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 19ms (6 ms)         
+Funnel (7)                                    | 9ms (1 ms)          
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (233ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 142ms (47 ms)       
+SourceMapConcat: Concat App (1)               | 31ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (74ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (2) | 8ms (4 ms)          
+broccoli-persistent-filter:EslintValid... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat App (1)               | 7ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (84ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 22ms (7 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 4ms (2 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (54ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 7ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (77ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 17ms (5 ms)         
+SourceMapConcat: Concat App (1)               | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   39:1  error  '$' is not defined                 no-undef
+   39:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   47:5  error  Unnecessary semicolon              no-extra-semi
+   76:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   76:1  error  '$' is not defined                 no-undef
+   83:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   83:1  error  '$' is not defined                 no-undef
+   91:5  error  Unnecessary semicolon              no-extra-semi
+  120:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  120:1  error  '$' is not defined                 no-undef
+  127:1  error  '$' is not defined                 no-undef
+  127:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  135:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (396ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 256ms (85 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 56ms (28 ms)        
+SourceMapConcat: Concat App (1)               | 22ms                
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (90ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 22ms (7 ms)         
+SourceMapConcat: Vendor JS (1)                | 11ms                
+SourceMapConcat: Concat App (1)               | 7ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 4ms (2 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (75ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 16ms (5 ms)         
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (64ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:EslintValid... (2) | 5ms (2 ms)          
+Addon#_addonTemplateFiles (ember-welco... (1) | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (53ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+TreeMerger: `addon/` trees (1)                | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (60ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+BroccoliMergeTrees (7)                        | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 5ms (2 ms)          
+TreeMerger (app) (1)                          | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file deleted styles/loading-bar.css
+file deleted styles/loading-bar.js
+
+Build successful (52ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 4ms                 
+SourceMapConcat: Concat App (1)               | 3ms                 
+
+file deleted templates/untaggedresources.hbs.backup
+
+Build successful (44ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 2ms (0 ms)          
+SourceMapConcat: Concat App (1)               | 2ms                 
+

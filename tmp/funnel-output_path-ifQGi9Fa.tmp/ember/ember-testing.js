@@ -1,0 +1,1 @@
+/root/aws_violations_project/tmp/funnel-input_base_path-4cO89iqB.tmp/ember-testing.js

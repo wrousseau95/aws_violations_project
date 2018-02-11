@@ -1,19 +1,155 @@
 <h2 align="center">Results for resources violations</h2>
 <hr />
-<div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2 id="uvt"></h2>
-   <p id="uvol"></p>
+
+<div class="wrapper">
+
+
+<section class="columns">
+  <div class="column" style="background-color:#1a254c;">
+<div align="center" id="loadingDivvol"><i class="fa fa-cog fa-spin fa-3x fa-fw" style="font-size:80px;color:white;"></i></div>
+    <h4 id="uvt" style="color:white"></h4>
+   <p id="uvol" style="color:white; font-family: 'Roboto', sans-serif;"></p>
   </div>
 
-  <div class="column" style="background-color:#bbb;">
-    <h2 id="uet"></h2>
-    <p id="uec2" class="ldBar" data-value="50"></p>
+  <div class="column sk-rect sk-rect2" style="background-color:#434e77;">
+<div align="center" id="loadingDivec2"><i class="fa fa-cog fa-spin fa-3x fa-fw" style="font-size:80px;color:white;"></i></div>
+    <h4 id="uet" style="color:white"></h4>
+    <p id="uec2" class="ldBar" data-value="50" style="color:white; font-family: 'Roboto', sans-serif;"></p>
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2 id="uut"></h2>
-    <p id="uaa"></p>
-  </div>
+  <div class="column sk-rect sk-rect3" style="background-color:#1a254c;">
+<div align="center" id="loadingDivuaa"><i class="fa fa-cog fa-spin fa-3x fa-fw" style="font-size:80px;color:white;"></i></div>
+    <h4 id="uut" style="color:white"></h4>
+    <p id="uaa" style="color:white; font-family: 'Roboto', sans-serif;"></p>
+</div>
+</section>
+
+<footer>
+    <h3>Developed By: Matthew L. Trotter</h3>
+    <p>This application was written from scratch, no templates or snippet coding was used so this is a beta (dirty) ver. 0.1 release. This beta release; however, is fully functional, bug free and will cleanly locate resource violations within any AWS environment, simply provide an IAM key with the necessary permissions to describe services (read-only) and you are good to go! Further build/installation information can be found at <a href="https://github.com/sudir/aws_violations_project">my private github site</a></p>
+  </footer>
+  
 </div>
 
-{{outlet}}
+
+
+
+
+
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+li{list-style-position:inside;}
+
+
+* { box-sizing: border-box; 
+overflow:auto;
+}
+
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+  padding: 5px;
+  max-width: 100%;
+  width: 95%;
+  margin: 20px auto;
+}
+header {
+  padding: 0 15px;
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+height:100%;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+height:100%;
+  
+}
+
+footer {
+  padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}  
+
+
+
+.sk-wave {
+  margin: 40px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px; }
+  .sk-wave .sk-rect {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-waveStretchDelay 1.2s infinite ease-in-out;
+            animation: sk-waveStretchDelay 1.2s infinite ease-in-out; }
+  .sk-wave .sk-rect1 {
+    -webkit-animation-delay: -1.2s;
+            animation-delay: -1.2s; }
+  .sk-wave .sk-rect2 {
+    -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s; }
+  .sk-wave .sk-rect3 {
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s; }
+  .sk-wave .sk-rect4 {
+    -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s; }
+  .sk-wave .sk-rect5 {
+    -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s; }
+@-webkit-keyframes sk-waveStretchDelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); } }
+@keyframes sk-waveStretchDelay {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); } }
+
+</style>
