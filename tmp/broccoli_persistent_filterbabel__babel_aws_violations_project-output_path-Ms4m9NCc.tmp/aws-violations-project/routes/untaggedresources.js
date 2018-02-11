@@ -6,26 +6,8 @@ define("aws-violations-project/routes/untaggedresources", ["exports"], function 
   });
   exports.default = Ember.Route.extend({});
 
-  // I wrote this non-asynchronus to get untagged volumes and it caused problems
-  //var vol = new XMLHttpRequest();
-  //vol.open("GET", "http://localhost:5000/get_untagged_volumes", true);
-  //vol.onreadystatechange = function () {
-  //  if (vol.readyState == 4) {   
-  //var vol_parse =(vol.responseText.replace( /\n/g, " " ).split( " " ));
-  //  var arrayvol = vol_parse.filter(function(e){ return e === 0 || e });
-  //
-  //		var ul = document.createElement('ul');
-  //	document.getElementById('uvol').appendChild(ul);
-  //
-  //		arrayvol.forEach(function(name){
-  //			var li = document.createElement('li');
-  //			ul.appendChild(li);
-  //			li.innerHTML += name;
-  //		});
-  //}
-  //}
-  //vol.send()
-  // Here is the asynchronus version for getting untagged volumes :-) 
+
+  // Async function for finding untagged Volumes
   function get_untag_vol(url, callback) {
     var volRequest = new XMLHttpRequest();
     volRequest.onreadystatechange = function () {
@@ -65,34 +47,88 @@ define("aws-violations-project/routes/untaggedresources", ["exports"], function 
     volRequest.send();
   }
 
-  // Here is the asynchronus version for getting untagged instances :-) 
+  // Async callback for finding untagged Ec2 Instances
   function get_untag_ec2(url, callback) {
     var ec2Request = new XMLHttpRequest();
     ec2Request.onreadystatechange = function () {
       if (ec2Request.readyState === 4 && ec2Request.status === 200) {
         callback.call(ec2Request.responseXML);
+        setTimeout(function () {
+          // calling callback function
+          var ec2_parse = ec2Request.responseText.replace(/\n/g, " ").split(" ");
+          var arrayec2 = ec2_parse.filter(function (e) {
+            return e === 0 || e;
+          });
 
-        // calling callback function
-        var ec2_parse = ec2Request.responseText.replace(/\n/g, " ").split(" ");
-        var arrayec2 = ec2_parse.filter(function (e) {
-          return e === 0 || e;
-        });
-
-        var ul = document.createElement('ul');
-        document.getElementById('uec2').appendChild(ul);
-
-        arrayec2.forEach(function (name) {
-          var li = document.createElement('li');
-          ul.appendChild(li);
-          li.innerHTML += name;
-        });
+          function isEmpty(obj) {
+            for (var key in obj) {
+              if (obj.hasOwnProperty(key)) return false;
+            }
+            return true;
+          }
+          if (isEmpty(arrayec2)) {
+            document.getElementById("uet").innerHTML = "<h3>Awesome! None Untagged</h3>";
+            document.getElementById("uec2").innerHTML = "<h3>Awesome! None Untagged</h3>";
+          } else {
+            // Object is NOT empty
+            var ul = document.createElement('ul');
+            document.getElementById("uet").innerHTML = "<h4>Warning: Untagged instances found</h4>";
+            document.getElementById('uec2').appendChild(ul);
+            arrayec2.forEach(function (name) {
+              var li = document.createElement('li');
+              ul.appendChild(li);
+              li.innerHTML += name;
+            });
+          };
+        }, 10);
       }
     };
     ec2Request.open('GET', url, true);
     ec2Request.send();
   }
 
+  // Async callback for finding unattached volumes
+  function get_unat_vol(url, callback) {
+    var unvolRequest = new XMLHttpRequest();
+    unvolRequest.onreadystatechange = function () {
+      if (unvolRequest.readyState === 4 && unvolRequest.status === 200) {
+        callback.call(unvolRequest.responseXML);
+        setTimeout(function () {
+          // calling callback function
+          var unvol_parse = unvolRequest.responseText.replace(/\n/g, " ").split(" ");
+          var arrayunvol = unvol_parse.filter(function (e) {
+            return e === 0 || e;
+          });
+
+          function isEmpty(obj) {
+            for (var key in obj) {
+              if (obj.hasOwnProperty(key)) return false;
+            }
+            return true;
+          }
+          if (isEmpty(arrayunvol)) {
+            document.getElementById("uut").innerHTML = "<h3>Awesome! None unattached</h3>";
+            document.getElementById("uaa").innerHTML = "<h3>Awesome! None unattached</h3>";
+          } else {
+            // Object is NOT empty
+            var ul = document.createElement('ul');
+            document.getElementById("uut").innerHTML = "<h4>Warning: Unattached volumes found</h4>";
+            document.getElementById('uaa').appendChild(ul);
+            arrayunvol.forEach(function (name) {
+              var li = document.createElement('li');
+              ul.appendChild(li);
+              li.innerHTML += name;
+            });
+          };
+        }, 10);
+      }
+    };
+    unvolRequest.open('GET', url, true);
+    unvolRequest.send();
+  }
+
   // calling Async functions
   get_untag_vol("http://localhost:5000/get_untagged_volumes", function () {});
   get_untag_ec2("http://localhost:5000/get_untagged_instances", function () {});
+  get_unat_vol("http://localhost:5000/get_detached_volumes", function () {});
 });

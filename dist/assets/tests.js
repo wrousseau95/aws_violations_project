@@ -20,14 +20,9 @@ define('aws-violations-project/tests/app.lint-test', [], function () {
     assert.ok(true, 'router.js should pass ESLint\n\n');
   });
 
-  QUnit.test('routes/resourceviolations.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/resourceviolations.js should pass ESLint\n\n');
-  });
-
   QUnit.test('routes/untaggedresources.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/untaggedresources.js should pass ESLint\n\n57:5 - Unnecessary semicolon. (no-extra-semi)');
+    assert.ok(false, 'routes/untaggedresources.js should pass ESLint\n\n40:5 - Unnecessary semicolon. (no-extra-semi)\n82:5 - Unnecessary semicolon. (no-extra-semi)\n124:5 - Unnecessary semicolon. (no-extra-semi)');
   });
 });
 define('aws-violations-project/tests/helpers/destroy-app', ['exports'], function (exports) {
@@ -122,27 +117,9 @@ define('aws-violations-project/tests/tests.lint-test', [], function () {
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
 
-  QUnit.test('unit/routes/resourceviolations-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/routes/resourceviolations-test.js should pass ESLint\n\n');
-  });
-
   QUnit.test('unit/routes/untaggedresources-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/untaggedresources-test.js should pass ESLint\n\n');
-  });
-});
-define('aws-violations-project/tests/unit/routes/resourceviolations-test', ['ember-qunit'], function (_emberQunit) {
-  'use strict';
-
-  (0, _emberQunit.moduleFor)('route:resourceviolations', 'Unit | Route | resourceviolations', {
-    // Specify the other units that are required for this test.
-    // needs: ['controller:foo']
-  });
-
-  (0, _emberQunit.test)('it exists', function (assert) {
-    var route = this.subject();
-    assert.ok(route);
   });
 });
 define('aws-violations-project/tests/unit/routes/untaggedresources-test', ['ember-qunit'], function (_emberQunit) {

@@ -23,11 +23,6 @@ define('aws-violations-project/tests/tests.lint-test', [], function () {
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
 
-  QUnit.test('unit/routes/resourceviolations-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/routes/resourceviolations-test.js should pass ESLint\n\n');
-  });
-
   QUnit.test('unit/routes/untaggedresources-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/untaggedresources-test.js should pass ESLint\n\n');

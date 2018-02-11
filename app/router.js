@@ -7,7 +7,6 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('resourceviolations');
   this.route('untaggedresources');
 });
 
