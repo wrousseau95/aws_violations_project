@@ -42,7 +42,7 @@ You will need the following things properly installed on your computer.
 ### Code Generators
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Live App
+## Running Live AWS Audit App
 <img src="https://github.com/sudir/aws_violations_project/blob/master/screenshot1.png">
 <img src="https://github.com/sudir/aws_violations_project/blob/master/screenshot2.png">
 
