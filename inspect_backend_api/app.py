@@ -14,14 +14,14 @@ cors = CORS(app, resources={r"/get_untagged_instances*": {"origins": "*"}})
 # Volumes
 @app.route("/get_all_volumes")
 def get_all_volumes():
- cmd = 'aws ec2 describe-volumes --query "Volumes[].[VolumeId]" --output text'
+ cmd = 'aws ec2 describe-volumes --query "Volumes[].[VolumeId, AvailabilityZone]" --output text'
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
 
 @app.route("/get_untagged_volumes")
 def get_untagged_volumes():
- cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, Tags]' --output text | grep None | awk '{print $1}'"
+ cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, AvailabilityZone, Tags]' --output text | grep None | awk -v OFS='\t' '{print $1,  $2}'"
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
@@ -31,14 +31,14 @@ def get_untagged_volumes():
 # Instances
 @app.route("/get_all_instances")
 def get_all_instances():
- cmd = "aws ec2 describe-instances --query 'Reservations[].Instances[].{ID: InstanceId}' --output text"
+ cmd = "aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId, State.Name, Placement.AvailabilityZone]' --output text"
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
 
 @app.route("/get_untagged_instances")
 def get_untagged_instances():
- cmd = "aws ec2 describe-instances --query 'Reservations[].Instances[].{ID: InstanceId, Tag: Tags[].Key}' --output text | grep -v ROLE | awk '{print $1}'"
+ cmd = "aws ec2 describe-instances --query 'Reservations[].Instances[].[InstanceId, Placement.AvailabilityZone, Tags[].Key]' --output text | grep None | awk -v OFS='\t' '{print $1,  $2}'"
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
@@ -60,6 +60,7 @@ def get_detached_volumes():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
 
