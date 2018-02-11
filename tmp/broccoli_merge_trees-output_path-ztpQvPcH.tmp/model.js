@@ -1,0 +1,1 @@
+/Users/sulay/Documents/Repositories/aws_violations_project/tmp/broccoli_merge_trees-input_base_path-n0OFd4FR.tmp/0/model.js
