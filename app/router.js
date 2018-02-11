@@ -9,7 +9,6 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('resourceviolations');
   this.route('untaggedresources');
-  this.route('untaggedresources-loading');
 });
 
 export default Router;

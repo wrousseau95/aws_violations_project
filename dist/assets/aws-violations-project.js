@@ -254,7 +254,6 @@ define('aws-violations-project/router', ['exports', 'aws-violations-project/conf
   Router.map(function () {
     this.route('resourceviolations');
     this.route('untaggedresources');
-    this.route('untaggedresources-loading');
   });
 
   exports.default = Router;
@@ -266,28 +265,6 @@ define('aws-violations-project/routes/resourceviolations', ['exports'], function
     value: true
   });
   exports.default = Ember.Route.extend({});
-});
-define('aws-violations-project/routes/untaggedresources-loading', ['exports'], function (exports) {
-  'use strict';
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = Ember.Route.extend({
-    model: function model() {
-      return this.get('store').findAll('untaggedresources-loading');
-    },
-
-
-    actions: {
-      loading: function loading(transition, originRoute) {
-        var controller = this.controllerFor('foo');
-        controller.set('currentlyLoading', true);
-
-        return true; // allows the loading template to be shown
-      }
-    }
-  });
 });
 define("aws-violations-project/routes/untaggedresources", ["exports"], function (exports) {
   "use strict";
@@ -348,14 +325,6 @@ define("aws-violations-project/templates/resourceviolations", ["exports"], funct
     value: true
   });
   exports.default = Ember.HTMLBars.template({ "id": "fF3LpGpD", "block": "{\"symbols\":[],\"statements\":[[1,[18,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "aws-violations-project/templates/resourceviolations.hbs" } });
-});
-define("aws-violations-project/templates/untaggedresources-loading", ["exports"], function (exports) {
-  "use strict";
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = Ember.HTMLBars.template({ "id": "zAfkBq/u", "block": "{\"symbols\":[],\"statements\":[[6,\"h1\"],[7],[0,\" Loading....\"],[8],[0,\"\\n\\n\\n\"],[1,[18,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "aws-violations-project/templates/untaggedresources-loading.hbs" } });
 });
 define("aws-violations-project/templates/untaggedresources", ["exports"], function (exports) {
   "use strict";

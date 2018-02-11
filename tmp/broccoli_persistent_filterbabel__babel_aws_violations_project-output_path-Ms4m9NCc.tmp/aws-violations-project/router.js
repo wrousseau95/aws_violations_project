@@ -14,7 +14,6 @@ define('aws-violations-project/router', ['exports', 'aws-violations-project/conf
   Router.map(function () {
     this.route('resourceviolations');
     this.route('untaggedresources');
-    this.route('untaggedresources-loading');
   });
 
   exports.default = Router;
