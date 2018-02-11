@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
 
 
 <script type="text/javascript">
@@ -37,7 +38,7 @@ body {
 </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title align="right">AWSViolationsProject</title>
+    <title align="right">AWSAuditingApp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -53,12 +54,28 @@ body {
 <h1 align="center" style="font-family: 'Kaushan Script'; font-color:black">AWS Auditing App</h1>
 <div id="sse1">
   <div id="sses1">
-    <ul>
-      <li><a href="untaggedresources" style="font-size:20px;">Search Violations</a></li>
-       <li><a href="https://github.com/sudir/aws_violations_project" style="font-size:20px;">Visit My Github</a></li>   
-    </ul>
-  </div>
+    
+  <li><button class="buttoni"><a href="untaggedresources" style="font-family: 'Nanum Gothic', sans-serif;font-size:20px;text-color:white">Search Violations</a></button></li>
+  <li><button class="buttoni"><a href="https://github.com/sudir/aws_violations_project" style="font-family: 'Nanum Gothic', sans-serif;font-size:20px;text-color:white">Visit My Github</a></button></li>
+ 
+ </div>
 </div>
+
+<style>
+.button {
+   
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.buttoni {background-color: #030821cf;}
+</style>
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/aws-violations-project.js"></script>

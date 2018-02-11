@@ -37,7 +37,7 @@ document.getElementById("uvol").innerHTML = "<h3>Awesome! None Untagged</h3>";
     // Object is NOT empty
 	var ul = document.createElement('ul');
 $('#loadingDivvol').remove();
-document.getElementById("uvt").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged volumes";
+document.getElementById("uvt").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged volumes"+'<br />'+'Total Objects:'+' '+arrayvol.length;
 	document.getElementById('uvol').appendChild(ul);
 		arrayvol.forEach(function(name){
 			var li = document.createElement('li');
@@ -81,7 +81,7 @@ document.getElementById("uec2").innerHTML = "<h3>Awesome! None Untagged</h3>";
     // Object is NOT empty
   var ul = document.createElement('ul');
 $('#loadingDivec2').remove();
-document.getElementById("uet").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged instances";
+document.getElementById("uet").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Untagged instances"+'<br />'+'Total Objects:'+' '+arrayec2.length;
   document.getElementById('uec2').appendChild(ul);
     arrayec2.forEach(function(name){
       var li = document.createElement('li');
@@ -125,7 +125,7 @@ document.getElementById("uaa").innerHTML = "<h3>Awesome! None unattached</h3>";
     // Object is NOT empty
   var ul = document.createElement('ul');
 $('#loadingDivuaa').remove();
-document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Unattached volumes";
+document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"></i>'+' '+"Warning: Unattached volumes"+'<br />'+'Total Objects:'+' '+arrayunvol.length;
   document.getElementById('uaa').appendChild(ul);
     arrayunvol.forEach(function(name){
       var li = document.createElement('li');

@@ -41,7 +41,6 @@
 #sses1 li a
 {
     box-sizing: content-box;
-    height:30px;
     padding-top: 8px;
     margin: 0 20px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
     color: #fff;
