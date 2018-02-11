@@ -42,10 +42,9 @@ You will need the following things properly installed on your computer.
 ### Code Generators
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
+### Running Live App
+<img src="https://github.com/sudir/aws_violations_project/screenshot1.png">
+<img src="https://github.com/sudir/aws_violations_project/screenshot2.png">
 
 ### Building
 
