@@ -11,7 +11,7 @@ http://52.23.253.231:4200/untaggedresources
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+You will need the following things properly installed on your server.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) 
