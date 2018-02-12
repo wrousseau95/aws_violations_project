@@ -1236,3 +1236,7 @@
 127.0.0.1 - - [12/Feb/2018 06:52:48] "GET /get_detached_volumes HTTP/1.1" 200 -
 127.0.0.1 - - [12/Feb/2018 06:52:49] "GET /get_untagged_volumes HTTP/1.1" 200 -
 127.0.0.1 - - [12/Feb/2018 06:52:49] "GET /get_untagged_instances HTTP/1.1" 200 -
+127.0.0.1 - - [12/Feb/2018 06:54:23] "GET /get_untagged_volumes HTTP/1.1" 200 -
+127.0.0.1 - - [12/Feb/2018 06:54:23] "GET /get_untagged_instances HTTP/1.1" 200 -
+127.0.0.1 - - [12/Feb/2018 06:54:24] "GET /get_default_vpc HTTP/1.1" 200 -
+127.0.0.1 - - [12/Feb/2018 06:54:24] "GET /get_detached_volumes HTTP/1.1" 200 -
