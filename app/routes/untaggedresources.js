@@ -1,3 +1,4 @@
+// Written by: Matthew Trotter (The King of Coding)
 import Route from '@ember/routing/route';
 
 
@@ -6,9 +7,7 @@ import Route from '@ember/routing/route';
 
 
 
-
-
-// Async function for finding untagged Volumes
+// Async function for default VPC and general information -- I love info
 function get_untag_vol(url, callback) {
    var volRequest = new XMLHttpRequest();
   volRequest.onreadystatechange = function() {
@@ -141,8 +140,7 @@ document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"
 }
 
 
-
-
+// Callback functions are perfect for the non io blocking API calls I need to make
 // calling Async functions
 get_untag_vol("http://52.23.253.231/get_untagged_volumes", function() {
 });
