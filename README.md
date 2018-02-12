@@ -4,8 +4,8 @@
 Another awesome application developed by: Matt Trotter
 <br />This app has an customizable Ember front-end with an AWS look and feel that commnunicates with a simple python API backend.
 Easily communicate with AWS services from a simple UI for reporting unmanaged resources.
-Add a restricted IAM key to your `aws configure` cli tool and let it work its magic
-autodiscovering untagged and unassigned resources.
+Add a restricted IAM key to your `aws configure` cli tool {server side} and let it work its magic
+autodiscovering untagged and unassigned resources by this app.
 
 #### Example:
 http://52.23.253.231:4200/untaggedresources
