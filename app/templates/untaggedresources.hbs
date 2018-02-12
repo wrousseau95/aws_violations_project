@@ -25,7 +25,13 @@
 
 <footer>
     <h3 style="font-family: 'Nanum Gothic', sans-serif;">Developed By: Matthew L. Trotter</h3>
-    <p style="font-family: 'Nanum Gothic', sans-serif;">This application was written from scratch, no templates or snippet coding was used so this is a beta (dirty) ver. 0.1 release. This beta release; however, is fully functional, bug free and will cleanly locate resource violations within any AWS environment, simply provide an IAM key with the necessary permissions to describe services (read-only) and you are good to go! Further build/installation information can be found at <a href="https://github.com/sudir/aws_violations_project">my private github site</a></p>
+    <p style="font-family: 'Nanum Gothic', sans-serif;">This application is officialy production ready ver. 1.0.0 release. This release was recently upgraded with better verbosity and smother transitions. It is fully functional for any internal production environment, bug free and will cleanly locate the following resource violations within any AWS environment:
+<ul>
+<li><b>Unaccounted for volumes that are untagged</b></li>
+<li><b>Unaccounted for instances that are untagged</b></li>
+<li><b>Unassigned volumes that are not in use</b></li>
+</ul>
+  Simply provide an IAM key with the necessary permissions to describe services (read-only) and you are good to go! Further build/installation information can be found at <a href="https://github.com/sudir/aws_violations_project">my private github site</a></p>
   </footer>
   
 </div>

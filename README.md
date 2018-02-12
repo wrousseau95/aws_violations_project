@@ -1,7 +1,8 @@
 # aws-violations-project
+[![Matt Trotter Code Gaurantee](https://img.shields.io/badge/Fully%20Tested-v1.0.4-red.svg)]()
 
 Another awesome application developed by: Matt Trotter
-<br />This app has an AWS customizable Ember front-end and simple python API backend.
+<br />This app has an customizable Ember front-end with an AWS look and feel that commnunicates with a simple python API backend.
 Easily communicate with AWS services from a simple UI for reporting unmanaged resources.
 Add a restricted IAM key to your `aws configure` cli tool and let it work its magic
 autodiscovering untagged and unassigned resources.
@@ -55,8 +56,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build --environment production` (production)
 
 ### Deploying
+* `ember server --live-reload=false`
 
-Specify what it takes to deploy your app.
+## Start the Python Inspect API
+* `python aws_violations_project/inspect_backend_api/app.py`
 
 ## Further Reading / Useful Links
 

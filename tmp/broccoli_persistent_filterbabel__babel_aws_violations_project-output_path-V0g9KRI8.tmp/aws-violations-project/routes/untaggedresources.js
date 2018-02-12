@@ -23,6 +23,7 @@ define('aws-violations-project/routes/untaggedresources', ['exports'], function 
   }
 
   // Async function for finding untagged Volumes
+  // Async function for default VPC and general information -- I love info
   function get_untag_vol(url, callback) {
     var volRequest = new XMLHttpRequest();
     volRequest.onreadystatechange = function () {
@@ -149,6 +150,7 @@ define('aws-violations-project/routes/untaggedresources', ['exports'], function 
     unvolRequest.send();
   }
 
+  // Callback functions are perfect for the non io blocking API calls I need to make
   // calling Async functions
   //
   get_geninfo("http://52.23.253.231/get_default_vpc", function () {});
