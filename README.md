@@ -12,6 +12,9 @@ autodiscovering untagged and unassigned resources by this app.
 #### Example:
 http://52.23.253.231:4200/untaggedresources
 
+## Prototype Diagram
+<img href="https://github.com/sudir/aws_violations_project/blob/master/aws_auditapp_prototype.png">
+
 ## Prerequisites
 
 You will need the following things properly installed on your server.
