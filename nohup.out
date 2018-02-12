@@ -2726,3 +2726,1191 @@ broccoli-persistent-filter:TemplateCom... (2) | 7ms (3 ms)
 SourceMapConcat: Vendor JS (1)                | 7ms                 
 SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
 
+file added components/awslogo.png
+
+Build successful (56ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Funnel (7)                                    | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+Funnel: Addon JS (6)                          | 3ms (0 ms)          
+SourceMapConcat: Concat App (1)               | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (58ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat: Test Support JS (1)  | 10ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (lint tests) (1)                       | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (46ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+SourceMapConcat: Concat App (1)               | 2ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (52ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 4ms (0 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 3ms (1 ms)          
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (66ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 10ms                
+broccoli-persistent-filter:Babel > [Ba... (1) | 5ms                 
+Addon#treeFor (ember-qunit - addon-tes... (1) | 5ms                 
+TreeMerger (vendor) (1)                       | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   39:1  error  '$' is not defined                 no-undef
+   39:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   47:5  error  Unnecessary semicolon              no-extra-semi
+   76:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   76:1  error  '$' is not defined                 no-undef
+   83:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   83:1  error  '$' is not defined                 no-undef
+   91:5  error  Unnecessary semicolon              no-extra-semi
+  120:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  120:1  error  '$' is not defined                 no-undef
+  127:1  error  '$' is not defined                 no-undef
+  127:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  135:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (356ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 210ms (70 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 66ms (33 ms)        
+SourceMapConcat: Concat App (1)               | 24ms                
+
+cleaning up...
+DEPRECATION: An addon is trying to access project.nodeModulesPath. This is not a reliable way to discover npm modules. Instead, consider doing: require("resolve").sync(something, { basedir: project.root }). Accessed from:   new NPMDependencyVersionChecker (/root/aws_violations_project/node_modules/ember-cli-loading-slider/node_modules/ember-cli-version-checker/src/npm-dependency-version-checker.js:11:33)
+Could not start watchman
+Visit https://ember-cli.com/user-guide/#watchman for more info.
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   32:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   32:1  error  '$' is not defined                 no-undef
+   39:1  error  '$' is not defined                 no-undef
+   39:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   47:5  error  Unnecessary semicolon              no-extra-semi
+   76:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   76:1  error  '$' is not defined                 no-undef
+   83:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   83:1  error  '$' is not defined                 no-undef
+   91:5  error  Unnecessary semicolon              no-extra-semi
+  120:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  120:1  error  '$' is not defined                 no-undef
+  127:1  error  '$' is not defined                 no-undef
+  127:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  135:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (3670ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Concat (8)                                    | 2090ms (261 ms)     
+Babel (19)                                    | 572ms (30 ms)       
+Rollup (1)                                    | 552ms               
+EslintValidationFilter (2)                    | 255ms (127 ms)      
+
+file added templates/4913
+file deleted templates/4913
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs~
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (254ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 130ms (43 ms)       
+broccoli-persistent-filter:TemplateCom... (2) | 39ms (19 ms)        
+SourceMapConcat: Concat App (1)               | 21ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (204ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (2) | 90ms (45 ms)        
+broccoli-persistent-filter:Babel > [Ba... (3) | 24ms (8 ms)         
+SourceMapConcat: Concat App (1)               | 13ms                
+Funnel: Addon JS (6)                          | 11ms (1 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 11ms (5 ms)         
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (214ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 110ms (36 ms)       
+SourceMapConcat: Vendor JS (1)                | 11ms                
+SourceMapConcat: Concat App (1)               | 11ms                
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (109ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 21ms (7 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 16ms (8 ms)         
+SourceMapConcat: Concat App (1)               | 10ms                
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+broccoli-persistent-filter:Babel > [Ba... (1) | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file changed templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (92ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 18ms                
+SourceMapConcat: Concat App (1)               | 12ms                
+Funnel (7)                                    | 8ms (1 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 8ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 5ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token, expected ; (19:66)
+
+  17 |    setTimeout(function(){
+  18 |       // calling callback function
+> 19 | document.getElementById("geninfo").innerHTML ='Audit Executed:'+''Date()+'<br />'+'<i class="fab fa-aws"></i>'+' '+'Default VPC Detected:'+' '+geninfoRequest.responseText;
+     |                                                                   ^
+  20 |    }
+  21 | }
+  22 | }
+
+
+Stack Trace and Error Report: /tmp/error.dump.d6697951d696d9f04d864381afdae383.log
+file added routes/4913
+file deleted routes/4913
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token, expected , (21:0)
+
+  19 | document.getElementById("geninfo").innerHTML ='Audit Executed:'+' '+Date()+'<br />'+'<i class="fab fa-aws"></i>'+' '+'Default VPC Detected:'+' '+geninfoRequest.responseText;
+  20 |    }
+> 21 | }
+     | ^
+  22 | }
+  23 | };
+  24 | 
+
+
+Stack Trace and Error Report: /tmp/error.dump.13268ced7a17059b50fae3b7dc7c6313.log
+file added routes/4913
+file deleted routes/4913
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   22:2  error  Unnecessary semicolon              no-extra-semi
+   45:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   45:1  error  '$' is not defined                 no-undef
+   52:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   52:1  error  '$' is not defined                 no-undef
+   60:5  error  Unnecessary semicolon              no-extra-semi
+   89:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   89:1  error  '$' is not defined                 no-undef
+   96:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   96:1  error  '$' is not defined                 no-undef
+  104:5  error  Unnecessary semicolon              no-extra-semi
+  133:1  error  '$' is not defined                 no-undef
+  133:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  140:1  error  '$' is not defined                 no-undef
+  140:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  148:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 16 problems (16 errors, 0 warnings)
+  4 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (512ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 297ms (99 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 115ms (57 ms)       
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   22:2  error  Unnecessary semicolon              no-extra-semi
+   45:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   45:1  error  '$' is not defined                 no-undef
+   52:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   52:1  error  '$' is not defined                 no-undef
+   60:5  error  Unnecessary semicolon              no-extra-semi
+   89:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   89:1  error  '$' is not defined                 no-undef
+   96:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   96:1  error  '$' is not defined                 no-undef
+  104:5  error  Unnecessary semicolon              no-extra-semi
+  133:1  error  '$' is not defined                 no-undef
+  133:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  140:1  error  '$' is not defined                 no-undef
+  140:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  148:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 16 problems (16 errors, 0 warnings)
+  4 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (110ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:EslintValid... (2) | 20ms (10 ms)        
+SourceMapConcat: Concat App (1)               | 13ms                
+SourceMapConcat: Vendor JS (1)                | 9ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 8ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 7ms                 
+Funnel (7)                                    | 6ms (0 ms)          
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file changed routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token (25:0)
+
+  23 |   geninfoRequest.open('GET', url, true);
+  24 |   geninfoRequest.send();
+> 25 | }
+     | ^
+  26 | 
+  27 | 
+  28 | // Async function for finding untagged Volumes
+
+
+Stack Trace and Error Report: /tmp/error.dump.50e13b9e9cdd064ed7910cb7c7b1bf07.log
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (491ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 341ms (113 ms)      
+broccoli-persistent-filter:EslintValid... (2) | 54ms (27 ms)        
+
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+Build Error (Babel)
+
+aws-violations-project/routes/untaggedresources.js: Unexpected token, expected ; (18:149)
+
+  16 |       callback.call(geninfoRequest.responseXML);
+  17 |       // calling callback function
+> 18 | document.getElementById("geninfo").innerHTML ='Audit Executed:'+' '+Date()+'<br />'+'<i class="fa fa-aws"></i>'+' '+'Default VPC Detected:'+' '+'<b>'geninfoRequest.responseText+'</b>';
+     |                                                                                                                                                      ^
+  19 |    
+  20 | }
+  21 | };
+
+
+Stack Trace and Error Report: /tmp/error.dump.b7e07c47125883ba118a533a1c534480.log
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (398ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 125ms (41 ms)       
+SourceMapConcat: Concat App (1)               | 115ms               
+broccoli-persistent-filter:EslintValid... (2) | 77ms (38 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (209ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 80ms (26 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 66ms (33 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (459ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 319ms (106 ms)      
+broccoli-persistent-filter:EslintValid... (2) | 49ms (24 ms)        
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (67ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 11ms                
+SourceMapConcat: Concat App (1)               | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+BroccoliMergeTrees (7)                        | 4ms (0 ms)          
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (340ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 191ms (63 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 59ms (29 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (243ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 102ms (34 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 61ms (30 ms)        
+SourceMapConcat: Concat App (1)               | 12ms                
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (341ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 200ms (66 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 70ms (35 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (198ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 81ms (27 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 59ms (29 ms)        
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (454ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 214ms (71 ms)       
+broccoli-persistent-filter:EslintValid... (2) | 159ms (79 ms)       
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (88ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:EslintValid... (2) | 19ms (9 ms)         
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (7)                                    | 7ms (1 ms)          
+TreeMerger (ExternalTree) (2)                 | 5ms (2 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 5ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (127ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 29ms (9 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 14ms (7 ms)         
+SourceMapConcat: Vendor JS (1)                | 11ms                
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Concat: App Tests (1)        | 9ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 8ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (102ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 21ms (7 ms)         
+SourceMapConcat: Vendor JS (1)                | 13ms                
+SourceMapConcat: Concat App (1)               | 8ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 6ms (3 ms)          
+TreeMerger (preprocessedApp & templates) (1)  | 6ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (66ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 10ms                
+SourceMapConcat: Concat App (1)               | 8ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added templates/4913
+file deleted templates/4913
+file added templates/untaggedresources.hbs~
+file deleted templates/untaggedresources.hbs
+file added templates/untaggedresources.hbs
+file deleted templates/untaggedresources.hbs~
+
+Build successful (97ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 22ms (7 ms)         
+broccoli-persistent-filter:TemplateCom... (2) | 14ms (7 ms)         
+SourceMapConcat: Concat App (1)               | 9ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+
+file added routes/4913
+file deleted routes/4913
+file added routes/untaggedresources.js~
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (314ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Concat App (1)               | 113ms               
+broccoli-persistent-filter:Babel > [Ba... (3) | 85ms (28 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 52ms (26 ms)        
+SourceMapConcat: Vendor JS (1)                | 16ms                
+
+file added routes/4913
+file deleted routes/4913
+file deleted routes/untaggedresources.js
+file added routes/untaggedresources.js~
+file added routes/untaggedresources.js
+file deleted routes/untaggedresources.js~
+
+/root/aws_violations_project/app/routes/untaggedresources.js
+   49:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   49:1  error  '$' is not defined                 no-undef
+   56:1  error  '$' is not defined                 no-undef
+   56:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   64:5  error  Unnecessary semicolon              no-extra-semi
+   93:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+   93:1  error  '$' is not defined                 no-undef
+  100:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  100:1  error  '$' is not defined                 no-undef
+  108:5  error  Unnecessary semicolon              no-extra-semi
+  137:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  137:1  error  '$' is not defined                 no-undef
+  144:1  error  '$' is not defined                 no-undef
+  144:1  error  Do not use global `$` or `jQuery`  ember/no-global-jquery
+  152:5  error  Unnecessary semicolon              no-extra-semi
+
+✖ 15 problems (15 errors, 0 warnings)
+  3 errors, 0 warnings potentially fixable with the `--fix` option.
+
+
+Build successful (215ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+broccoli-persistent-filter:Babel > [Ba... (3) | 94ms (31 ms)        
+broccoli-persistent-filter:EslintValid... (2) | 55ms (27 ms)        
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (61ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Funnel (custom transform: amd) (1)            | 5ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 5ms (2 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (57ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 7ms                 
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SourceMapConcat: Concat App (1)               | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (62ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+SourceMapConcat: Concat App (1)               | 3ms                 
+broccoli-persistent-filter:Babel > [Ba... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file deleted index.html
+file added index.html~
+file added index.html
+file deleted index.html~
+
+Build successful (64ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+BroccoliMergeTrees (7)                        | 5ms (0 ms)          
+Addon#treeFor (ember-data - addon) (1)        | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 3ms (1 ms)          
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (67ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 13ms                
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+broccoli-persistent-filter:EslintValid... (2) | 5ms (2 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 4ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (77ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Funnel (7)                                    | 9ms (1 ms)          
+Funnel: Addon JS (6)                          | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+Rollup (1)                                    | 5ms                 
+ConfigLoader (1)                              | 4ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (70ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+BroccoliMergeTrees (7)                        | 7ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 7ms                 
+Funnel: Pod Templates (1)                     | 5ms                 
+broccoli-persistent-filter:TemplateCom... (2) | 4ms (2 ms)          
+TreeMerger: `addon/` trees (1)                | 4ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (53ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+WatchedDir (8)                                | 4ms (0 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+Funnel (7)                                    | 2ms (0 ms)          
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (50ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+TreeMerger (app) (1)                          | 3ms                 
+SourceMapConcat: Concat App (1)               | 2ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 2ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (57ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 7ms                 
+SourceMapConcat: Concat App (1)               | 6ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+Funnel (7)                                    | 3ms (0 ms)          
+TreeMerger (vendor) (1)                       | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (57ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+Funnel: Addon JS (6)                          | 9ms (1 ms)          
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+SourceMapConcat: Concat App (1)               | 5ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (51ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 6ms                 
+broccoli-persistent-filter:Babel > [Ba... (2) | 6ms (3 ms)          
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+SimpleConcatConcat: Concat: Vendor Sty... (1) | 3ms                 
+SourceMapConcat: Concat App (1)               | 2ms                 
+

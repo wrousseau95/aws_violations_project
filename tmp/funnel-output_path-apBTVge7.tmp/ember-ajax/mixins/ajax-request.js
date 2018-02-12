@@ -1,0 +1,1 @@
+/root/aws_violations_project/tmp/funnel-input_base_path-qbXCLCYG.tmp/mixins/ajax-request.js

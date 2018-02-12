@@ -56,6 +56,13 @@ def get_detached_volumes():
  return output
 
 
+#------------------ General Account Information 
+@app.route("/get_default_vpc")
+def get_default_vpc():
+ cmd = "aws ec2 describe-account-attributes --attribute-names default-vpc --output text | grep 'vpc-' | awk -v OFS='\t' '{print $2}'"
+ p = Popen(cmd,  shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
+ output = p.stdout.read()
+ return output
 
 
 if __name__ == '__main__':

@@ -7,6 +7,23 @@ import Route from '@ember/routing/route';
 
 
 
+// Async function for General Info
+function get_geninfo(url, callback) {
+   var geninfoRequest = new XMLHttpRequest();
+  geninfoRequest.onreadystatechange = function() {
+    if (geninfoRequest.readyState === 4 &&
+      geninfoRequest.status === 200) {
+      callback.call(geninfoRequest.responseXML);
+      // calling callback function
+document.getElementById("geninfo").innerHTML ='<h2>Results for resource violations</h2>'+'<i class="fab fa-aws" style="font-size:3em; color:orange;"></i>'+'<br />'+'Audit Executed:'+' '+'<b>'+Date()+'</b>'+'<br />'+'Default VPC Detected:'+' '+'<b>'+geninfoRequest.responseText+'</b>';
+   
+}
+};
+
+  geninfoRequest.open('GET', url, true);
+  geninfoRequest.send();
+}
+
 
 // Async function for finding untagged Volumes
 function get_untag_vol(url, callback) {
@@ -144,6 +161,9 @@ document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"
 
 
 // calling Async functions
+//
+get_geninfo("http://52.23.253.231/get_default_vpc", function(){
+});
 get_untag_vol("http://52.23.253.231/get_untagged_volumes", function() {
 });
 get_untag_ec2("http://52.23.253.231/get_untagged_instances", function() { 

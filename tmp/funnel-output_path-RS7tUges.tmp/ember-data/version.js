@@ -1,0 +1,1 @@
+/root/aws_violations_project/tmp/creator-output_path-7gdKqqAe.tmp/version.js
