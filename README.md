@@ -1,4 +1,4 @@
-# aws-violations-project
+# aws-violations-project version 1.0.0 release
 [![Matt Trotter Code Gaurantee](https://img.shields.io/badge/Fully%20Tested-v1.0.4-red.svg)]()
 
 Another awesome application developed by: Matt Trotter
