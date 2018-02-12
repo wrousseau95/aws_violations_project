@@ -13,7 +13,7 @@ autodiscovering untagged and unassigned resources by this app.
 http://52.23.253.231:4200/untaggedresources
 
 ## Prototype Diagram
-<img href="https://github.com/sudir/aws_violations_project/blob/master/aws_auditapp_prototype.png">
+<img src="https://github.com/sudir/aws_violations_project/blob/master/aws_auditapp_prototype.png">
 
 ## Prerequisites
 
