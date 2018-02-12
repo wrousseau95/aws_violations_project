@@ -50,7 +50,7 @@ def get_untagged_instances():
 # Volumes
 @app.route("/get_detached_volumes")
 def get_detached_volumes():
- cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, Attachments]' --output text | grep -v attached"
+ cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, AvailabilityZone, Attachments]' --output text | grep -v attached"
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
