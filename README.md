@@ -1,6 +1,5 @@
 # aws-violations-project 
 #### version 1.0.0 release
-<br />
 
 [![Matt Trotter Code Gaurantee](https://img.shields.io/badge/Fully%20Tested-v1.0.0-red.svg)]()
 
