@@ -1,5 +1,5 @@
 # aws-violations-project version 1.0.0 release
-[![Matt Trotter Code Gaurantee](https://img.shields.io/badge/Fully%20Tested-v1.0.4-red.svg)]()
+[![Matt Trotter Code Gaurantee](https://img.shields.io/badge/Fully%20Tested-v1.0.0-red.svg)]()
 
 Another awesome application developed by: Matt Trotter
 <br />This app has an customizable Ember front-end with an AWS look and feel that commnunicates with a simple python API backend.
