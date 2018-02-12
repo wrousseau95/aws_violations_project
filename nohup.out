@@ -4020,3 +4020,22 @@ broccoli-persistent-filter:TemplateCom... (2) | 10ms (5 ms)
 SourceMapConcat: Vendor JS (1)                | 8ms                 
 SimpleConcatConcat: Concat: Vendor Sty... (1) | 6ms                 
 
+file added 4913
+file deleted 4913
+file added index.html~
+file deleted index.html
+file added index.html
+file deleted index.html~
+
+Build successful (65ms) – Serving on http://localhost:4200/
+
+
+
+Slowest Nodes (totalTime => 5% )              | Total (avg)         
+----------------------------------------------+---------------------
+SourceMapConcat: Vendor JS (1)                | 8ms                 
+SourceMapConcat: Concat App (1)               | 8ms                 
+BroccoliMergeTrees (7)                        | 6ms (0 ms)          
+SourceMapConcat: Concat: App Tests (1)        | 4ms                 
+SourceMapConcat: Concat: Test Support JS (1)  | 3ms                 
+
