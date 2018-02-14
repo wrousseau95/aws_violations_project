@@ -50,7 +50,7 @@ def get_untagged_instances():
 # Volumes
 @app.route("/get_detached_volumes")
 def get_detached_volumes():
- cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, AvailabilityZone, Attachments]' --output text | grep -v attached"
+ cmd = "aws ec2 describe-volumes --query 'Volumes[].[VolumeId, AvailabilityZone, Attachments]' --output text | sed -s 'N;/attached/!P;D' | grep -v 'attached'"
  p = Popen(cmd, shell=True, stdin=PIPE, stdout=PIPE, stderr=STDOUT, close_fds=True)
  output = p.stdout.read()
  return output
@@ -67,8 +67,6 @@ def get_default_vpc():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
 
 
 
