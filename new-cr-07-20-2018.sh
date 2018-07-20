@@ -29,20 +29,20 @@ STARTDATE=`date +%Y-%m-01`
 ENDDATE=`date +%Y-%m-%d`
 
 # If volume returns null for any Sum total, fail-safe check will set Average sum to "0"
-Fail_safe=`aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time 2018-07-01T12:15:00 --end-time 2018-07-20T12:15:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1`
+Fail_safe=`aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time "$STARTDATE"T13:00:00 --end-time "$ENDDATE"T13:00:00  --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1`
 if [ -z "$Fail_safe" ]
 then
 Average_Sum="0"
 else
-Average_Sum=`aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time 2018-07-01T12:15:00 --end-time 2018-07-20T12:15:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1 | awk -F: '{if($1<1)print$1}'`
+Average_Sum=`aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time "$STARTDATE"T13:00:00 --end-time "$ENDDATE"T13:00:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1 | awk -F: '{if($1<1)print$1}'`
 fi
 
 # Average sum is set, lets evaluate
 if [ -z "$Average_Sum" ]
 then
-echo "$i - Average volume usage: `aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time 2018-07-01T12:15:00 --end-time 2018-07-20T12:15:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1` Result: normal use"
+echo "$i - Average volume usage: `aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time "$STARTDATE"T13:00:00 --end-time "$ENDDATE"T13:00:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1` Result: normal use"
 else
-echo "$i - Average volume usage: `aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time 2018-07-01T12:15:00 --end-time 2018-07-20T12:15:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1` Alert: idle usage detected for `date +%m-%Y`"
+echo "$i - Average volume usage: `aws cloudwatch get-metric-statistics --region us-east-1 --metric-name VolumeReadOps --start-time "$STARTDATE"T13:00:00 --end-time "$ENDDATE"T13:00:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Sum | awk -v OFS='\t' '{print $2}'| sed 's/,//g' | sort -rn | head -n 1` Alert: idle usage detected for `date +%m-%Y`"
 fi
 done
 # Add space for results
