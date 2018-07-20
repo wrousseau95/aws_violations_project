@@ -163,12 +163,12 @@ document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"
 // Callback functions are perfect for the non io blocking API calls I need to make
 // calling Async functions
 //
-get_geninfo("http://52.23.253.231/get_default_vpc", function(){
+get_geninfo("http://54.84.63.114:5000/get_default_vpc", function(){
 });
-get_untag_vol("http://52.23.253.231/get_untagged_volumes", function() {
+get_untag_vol("http://54.84.63.114:5000/get_untagged_volumes", function() {
 });
-get_untag_ec2("http://52.23.253.231/get_untagged_instances", function() { 
+get_untag_ec2("http://54.84.63.114:5000/get_untagged_instances", function() { 
 });
-get_unat_vol("http://52.23.253.231/get_detached_volumes", function() { 
+get_unat_vol("http://54.84.63.114:5000/get_detached_volumes", function() { 
 });
 
