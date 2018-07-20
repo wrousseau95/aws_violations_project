@@ -72,6 +72,9 @@ document.getElementById("uvt").innerHTML ='<i class="fa fa-exclamation-triangle"
 }
 
 
+
+
+
 // Async callback for finding untagged Ec2 Instances
 function get_untag_ec2(url, callback) {
    var ec2Request = new XMLHttpRequest();
@@ -159,6 +162,139 @@ document.getElementById("uut").innerHTML ='<i class="fa fa-exclamation-triangle"
   unvolRequest.send();
 }
 
+// Async callback for finding idle ec2 instances
+function get_idle_instances(url, callback) {
+   var idleInstanceRequest = new XMLHttpRequest();
+  idleInstanceRequest.onreadystatechange = function() {
+    if (idleInstanceRequest.readyState === 4 &&
+      idleInstanceRequest.status === 200) {
+      callback.call(idleInstanceRequest.responseXML);
+   setTimeout(function(){  
+      // calling callback function
+  var idleinstance_parse =(idleInstanceRequest.responseText.replace( /\n/g, " " ).split( " " ));
+  var idle_instance_array = idleinstance_parse.filter(function(e){ return e === 0 || e });
+
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+if(isEmpty(idle_instance_array)) { 
+$('#loadingidlei').remove();
+document.getElementById("idleit").innerHTML ='<i class="fa fa-check"></i>'+' '+"All instances reflect normal usage";  
+document.getElementById("idleir").innerHTML ="This means that you have no idle instances<br />"+" "+"To load again, refresh this page.";
+
+} else {
+    // Object is NOT empty
+  var ul = document.createElement('ul');
+$('#loadingidlei').remove();
+document.getElementById("idleit").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Idle Instances Report"+'<br />'+'Total Objects:'+' '+idle_instance_array.length;
+  document.getElementById('idleir').appendChild(ul);
+    idle_instance_array.forEach(function(name){
+      var li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML += name;
+    })
+   }; 
+  }, 10);  
+    }
+  };
+  idleInstanceRequest.open('GET', url, true);
+  idleInstanceRequest.send();
+}
+
+
+// Async callback for finding idle ebs volumes
+function get_idle_volumes(url, callback) {
+   var idleVolumeRequest = new XMLHttpRequest();
+  idleVolumeRequest.onreadystatechange = function() {
+    if (idleVolumeRequest.readyState === 4 &&
+      idleVolumeRequest.status === 200) {
+      callback.call(idleVolumeRequest.responseXML);
+   setTimeout(function(){  
+      // calling callback function
+  var idlevol_parse =(idleVolumeRequest.responseText.replace( /\n/g, " " ).split( " " ));
+  var idle_vol_array = idlevol_parse.filter(function(e){ return e === 0 || e });
+
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+if(isEmpty(idle_vol_array)) { 
+$('#loadingidlev').remove();
+document.getElementById("idlevt").innerHTML ='<i class="fa fa-check"></i>'+' '+"All volumes reflect normal usage";  
+document.getElementById("idlevr").innerHTML ="This means that you have no idle volumes<br />"+" "+"To load again, refresh this page.";
+
+} else {
+    // Object is NOT empty
+  var ul = document.createElement('ul');
+$('#loadingidlev').remove();
+document.getElementById("idlevt").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Idle Volumes Report"+'<br />'+'Total Objects:'+' '+idle_vol_array.length;
+  document.getElementById('idlevr').appendChild(ul);
+    idle_vol_array.forEach(function(name){
+      var li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML += name;
+    })
+   }; 
+  }, 10);  
+    }
+  };
+  idleVolumeRequest.open('GET', url, true);
+  idleVolumeRequest.send();
+}
+
+// Async callback for finding idle databases
+function get_idle_dbs(url, callback) {
+   var idleDBRequest = new XMLHttpRequest();
+  idleDBRequest.onreadystatechange = function() {
+    if (idleDBRequest.readyState === 4 &&
+      idleDBRequest.status === 200) {
+      callback.call(idleDBRequest.responseXML);
+   setTimeout(function(){  
+      // calling callback function
+  var idledb_parse =(idleDBRequest.responseText.replace( /\n/g, " " ).split( " " ));
+  var idle_db_array = idledb_parse.filter(function(e){ return e === 0 || e });
+
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+if(isEmpty(idle_db_array)) { 
+$('#loadingidledb').remove();
+document.getElementById("idledbt").innerHTML ='<i class="fa fa-check"></i>'+' '+"All databases reflect normal usage";  
+document.getElementById("idledbr").innerHTML ="This means that you have no idle databases<br />"+" "+"To load again, refresh this page.";
+
+} else {
+    // Object is NOT empty
+  var ul = document.createElement('ul');
+$('#loadingidledb').remove();
+document.getElementById("idledbt").innerHTML='<i class="fa fa-exclamation-triangle"></i>'+' '+"Idle Databases Report"+'<br />'+'Total Objects:'+' '+idle_db_array.length;
+  document.getElementById('idledbr').appendChild(ul);
+    idle_db_array.forEach(function(name){
+      var li = document.createElement('li');
+      ul.appendChild(li);
+      li.innerHTML += name;
+    })
+   }; 
+  }, 10);  
+    }
+  };
+  idleDBRequest.open('GET', url, true);
+  idleDBRequest.send();
+}
+
+
+
+
 
 // Callback functions are perfect for the non io blocking API calls I need to make
 // calling Async functions
@@ -171,4 +307,13 @@ get_untag_ec2("http://54.84.63.114:5000/get_untagged_instances", function() {
 });
 get_unat_vol("http://54.84.63.114:5000/get_detached_volumes", function() { 
 });
+// Idle or unused resources
+//
+get_idle_instances("http://54.84.63.114:5000/get_idle_instances", function(){
+});
+get_idle_volumes("http://54.84.63.114:5000/get_idle_volumes", function(){
+});
+get_idle_dbs("http://54.84.63.114:5000/get_idle_dbs", function(){
+});
+
 
