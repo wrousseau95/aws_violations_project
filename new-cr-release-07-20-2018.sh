@@ -68,6 +68,13 @@ RDS DBCONNECTIONS REPORT:"
 # idle attached Ebs volumes
 #!/bin/bash
 detected_dbs=`aws rds describe-db-instances --output text --query 'DBInstances[*].DBInstanceIdentifier'`
+
+if [ -z "$detected_dbs" ]
+then
+
+echo "No DB detected"
+
+else
 for i in ${detected_dbs[*]}
 do
 STARTDATE=`date +%Y-%m-01`
@@ -90,3 +97,5 @@ else
 echo "$i - Average dbconnections usage: `aws cloudwatch get-metric-statistics --metric-name VolumeReadOps --start-time "$STARTDATE"T13:00:00 --end-time "$ENDDATE"T13:00:00 --period 360000 --namespace AWS/EBS --statistics Sum --dimensions Name=VolumeId,Value="$i" | grep Average | awk -v OFS='\t' '{print $2}' | sed 's/,//g' | sort -rn | head -n 1` Alert: idle db connectivity detected for `date +%m-%Y`"
 fi
 done
+
+fi
