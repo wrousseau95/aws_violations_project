@@ -1,3 +1,22 @@
+# Developed by: Sulayman Touray
+# Written by: Sulayman Touray
+# Introduction to Problem Solving & Algorithm Design
+#_____________________________________________________
+#-oooooooo/-      .+ooooooooo:  +ooo+        oooo/
+#+MMMMMMMMMMm+   -NMMMMMMMMMMs  +MMMM:      /MMMM/
+#+MMMNyyydMMMMy  /MMMMyyyyyyy/   mMMMd      mMMMd
+#+MMMm    :MMMM. /MMMN           /MMMM/    /MMMM:
+#+MMMm    .MMMM- /MMMN            dMMMm    mMMMh
+#+MMMm    .MMMM- /MMMMyyyy+       :MMMM/  +MMMM-
+#+MMMm    .MMMM- /MMMMMMMMy        hMMMm  NMMMy
+#+MMMm    .MMMM- /MMMMoooo:        -MMMM+oMMMM-
+#+MMMm    .MMMM- /MMMN              yMMMmNMMMy
+#+MMMm    +MMMM. /MMMN              .MMMMMMMM.
+#+MMMMdddNMMMMo  /MMMMddddddd+       sMMMMMMs
+#+MMMMMMMMMNh:   .mMMMMMMMMMMs        yMMMMs
+#.///////:-        -/////////-         .::.
+
+
 import subprocess
 from flask import Flask
 from flask_cors import CORS
